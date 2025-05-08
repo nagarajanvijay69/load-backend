@@ -69,4 +69,4 @@ app.post('/api/login', (req, res) => {
     res.status(401).json({ success: false, message: 'Invalid credentials' });
   }
 });
-app.listen(Port, () => console.log(`Server running on port ${process.env.PORT || 5000}`));
+app.listen(Port, () => console.log(`Server running on port ${Port || 5000}`));
