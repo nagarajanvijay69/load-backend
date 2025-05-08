@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
 const dotenv = require('dotenv');
-const PORT = process.env.PORT || 5000;
+const Port = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors());
@@ -69,4 +69,4 @@ app.post('/api/login', (req, res) => {
     res.status(401).json({ success: false, message: 'Invalid credentials' });
   }
 });
-app.listen(PORT, () => console.log(`Server running on port ${process.env.PORT || 5000}`));
+app.listen(Port, () => console.log(`Server running on port ${process.env.PORT || 5000}`));
