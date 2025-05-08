@@ -72,4 +72,4 @@ app.post('/api/login', (req, res) => {
 });
 
 // Start serve
-app.listen("https://load-backend-hln6.onrender.com", () => console.log(`Server running on port ${PORT}`));
+app.listen("https://load-backend-hln6.onrender.com", () => console.log("Server running"));
