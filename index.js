@@ -8,10 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://nagarajanvijay6380:nagarajanvijay...@cluster0.kjmrazm.mongodb.net//loanadmin', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-}).then(() => console.log('MongoDB connected'))
+mongoose.connect('mongodb+srv://nagarajanvijay6380:nagarajanvijay...@cluster0.kjmrazm.mongodb.net//loanadmin').then(() => console.log('MongoDB connected'))
   .catch(err => console.error('MongoDB connection error:', err));
 
 // Mongoose Schema
