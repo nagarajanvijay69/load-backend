@@ -29,6 +29,10 @@ const User = mongoose.model('User', userSchema);
 
 // API Routes
 // Get all users
+app.get('/', (req, res) => {
+  res.send('Welcome to the Loan Management API!');
+});
+
 app.get('/api/users', async (req, res) => {
   const users = await User.find();
   res.json(users);
