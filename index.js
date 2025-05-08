@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/loanadmin', {
+mongoose.connect('mongodb+srv://nagarajanvijay6380:nagarajanvijay...@cluster0.kjmrazm.mongodb.net//loanadmin', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => console.log('MongoDB connected'))
@@ -71,6 +71,5 @@ app.post('/api/login', (req, res) => {
   }
 });
 
-// Start server
-const PORT = 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+// Start serve
+app.listen("https://load-backend-hln6.onrender.com", () => console.log(`Server running on port ${PORT}`));
