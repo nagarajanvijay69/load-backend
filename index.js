@@ -1,11 +1,13 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const { configDotenv } = require('dotenv');
 const app = express();
 
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use(configDotenv());
 
 // MongoDB connection
 mongoose.connect('mongodb+srv://nagarajanvijay6380:nagarajanvijay...@cluster0.kjmrazm.mongodb.net//loanadmin').then(() => console.log('MongoDB connected'))
