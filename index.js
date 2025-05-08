@@ -68,5 +68,5 @@ app.post('/api/login', (req, res) => {
   }
 });
 
-const PORT = "https://load-backend-hln6.onrender.com" || 5000;
-app.listen(PORT, () => console.log("Server running"));
+const PORT =  5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
