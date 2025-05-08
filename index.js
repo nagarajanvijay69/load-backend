@@ -1,14 +1,13 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const { configDotenv } = require('dotenv');
 const app = express();
+const dotenv = require('dotenv');
 
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use(configDotenv());
-
+dotenv.config();
 // MongoDB connection
 mongoose.connect('mongodb+srv://nagarajanvijay6380:nagarajanvijay...@cluster0.kjmrazm.mongodb.net//loanadmin').then(() => console.log('MongoDB connected'))
   .catch(err => console.error('MongoDB connection error:', err));
